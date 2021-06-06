@@ -1,31 +1,31 @@
 // Add your Circle class here
 
 class Circle {
-  constructor(raduis) {
-    this.raduis = raduis
+  constructor(radius) {
+    this.radius = radius
   }
   
   get diameter() {
-    return this.raduis * 2
+    return this.radius * 2
   }
   
   get circumference() {
-    return this.raduis * 2 * Math.PI 
+    return this.radius * 2 * Math.PI 
   }
   
   get area() {
-    return Math.PI * this.raduis * this.raduis
+    return Math.PI * this.radius * this.radius
   }
   
   set diameter(d) {
-    this.raduis = d/2
+    this.radius = d/2
   }
   
   set circumference(c) {
-    this.raduis = c/(2*Math.PI)
+    this.radius = c/(2*Math.PI)
   }
   
   set area(a) {
-    this.raduis = Math.sqrt(a/Math.PI)
+    this.radius = Math.sqrt(a/Math.PI)
   }
 }
